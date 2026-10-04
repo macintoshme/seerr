@@ -121,7 +121,7 @@ const Login = () => {
         />
       ) : (
         settings.currentSettings.localLogin &&
-        (mediaServerLogin ? (
+        (mediaServerLogin || !MediaServerLogo ? (
           <ButtonWithLoader
             key="seerr"
             data-testid="seerr-login-button"
